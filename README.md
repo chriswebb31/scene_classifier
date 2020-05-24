@@ -14,3 +14,5 @@ To run service:
 `python3 scene.py`
 
 You can upload an image or use a HTML link to an image to classify it
+
+The model was created using FastAI
