@@ -42,7 +42,6 @@ async def classify_url(request):
 def predict_image_from_bytes(bytes):
     img = open_image(BytesIO(bytes))
     predicted,_,losses = scene_learner.predict(img)
-    print(dir(predicted))
     return JSONResponse({
         "predicted": str(predicted),
         "predictions": sorted(
