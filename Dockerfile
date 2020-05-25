@@ -13,9 +13,6 @@ RUN pip install starlette uvicorn python-multipart aiohttp
 ADD scene.py scene.py
 ADD export.pkl export.pkl
 
-# Run it once to trigger resnet download
-RUN python scene.py
-
 EXPOSE 8008
 
 # Start the server
